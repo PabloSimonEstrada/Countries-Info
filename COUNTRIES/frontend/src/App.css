@@ -1,0 +1,62 @@
+.App-header {
+  min-height: 100vh; /* Full height of the viewport */
+  display: flex;
+  flex-direction: column; /* Aligns items vertically */
+  align-items: center; /* Centers items horizontally in the container */
+  justify-content: center; /* Centers items vertically in the container */
+  font-size: calc(10px + 2vmin); /* Responsive font size */
+  color: white;
+  background-image: url('../public/earth.png'); /* Background image of the header */
+  background-size: cover; /* Ensures the background image covers the entire container */
+  background-position: center; /* Centers the background image */
+  background-repeat: no-repeat; /* Background image does not repeat */
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adds shadow for depth */
+}
+
+.App-header input {
+  margin: 10px;
+  padding: 10px;
+  width: 400px; /* Fixed width for consistency */
+  border: 2px solid #ddd; /* Subtle border for the input */
+  border-radius: 4px; /* Rounded corners for the input */
+}
+
+.App-header button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Consistent rounded corners as input */
+  cursor: pointer; /* Indicates button is clickable */
+  transition: background-color 0.3s; /* Smooth color transition on hover */
+}
+
+.App-header button:hover {
+  background-color: #0056b3; /* Button color change on hover for visual feedback */
+}
+
+.country-info h2 {
+  margin-top: 0; /* Removes default margin for consistency */
+}
+
+.country-info ul {
+  padding-left: 20px; /* Indents list for better readability */
+}
+
+.country-info img {
+  max-width: 100px; /* Ensures flag images are not too large */
+  border-radius: 4px; /* Softens edges of images */
+}
+
+.country-info {
+  background-color: rgba(249, 249, 249, 0.8); /* Semi-transparent background for readability */
+  color: #333; /* Dark text for high contrast on light background */
+  padding: 15px; /* Padding for spacing around content */
+  margin-top: 20px; /* Spacing above the info section */
+  border-radius: 5px; /* Slightly rounded corners for aesthetic */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds subtle shadow for depth */
+  max-width: 900px; /* Limits maximum width for better layout */
+  word-wrap: break-word; /* Prevents long words from overflowing */
+}
