@@ -50,14 +50,21 @@ function App() {
 
  // Function to handle the submission of the country search
   const handleSubmit = async () => {
+
+    const baseUrl = process.env.REACT_APP_BASE_URL;
+console.log(baseUrl);
+    
+
     if (!country) {
       alert('Please enter a country name.');
       return;
     }
 
+
+
     setLoading(true);
     try {    // Fetch country information from the backend
-      const response = await fetch(`http://localhost:3001/country/${country}`);
+      const response = await fetch(`${baseUrl}/country/${country}`);
       if (!response.ok) {
         throw new Error(`HTTP status ${response.status}: ${response.statusText}`);
       }
@@ -89,8 +96,7 @@ function App() {
 
  // Main render method for the App component
   return ( // Load the Google Maps script
-    <LoadScript googleMapsApiKey={process.env.REACT_APP_API_KEY}>
-
+    <LoadScript googleMapsApiKey = {process.env.REACT_APP_MAPS_API_KEY} >
       <div className="App">
         <header className="App-header">
           <input
