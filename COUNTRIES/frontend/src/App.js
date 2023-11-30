@@ -49,7 +49,6 @@ function App() {
   };
 
       const baseUrl = process.env.REACT_APP_BASE_URL;
-console.log(baseUrl);
 
  // Function to handle the submission of the country search
   const handleSubmit = async () => {
