@@ -89,7 +89,7 @@ function App() {
 
  // Main render method for the App component
   return ( // Load the Google Maps script
-    <LoadScript googleMapsApiKey="AIzaSyCOW51rXSCtswIq_B_isaw2Smp5oMX2HJM">
+    <LoadScript googleMapsApiKey=process.env.REACT_APP_API_KEY>
       <div className="App">
         <header className="App-header">
           <input
