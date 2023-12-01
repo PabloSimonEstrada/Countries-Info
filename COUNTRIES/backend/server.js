@@ -2,7 +2,7 @@ const express = require('express');
 const axios = require('axios');
 const cors = require('cors');
 const app = express();
-const port = 3001; // You can change the port if necessary
+const port = process.env.PORT || 3001;
 app.use(cors());
 // GET route to fetch country information by name
 app.get('/country/:name', async (req, res) => {
